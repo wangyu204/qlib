@@ -1,5 +1,6 @@
 import qlib
 # region in [REG_CN, REG_US]
+# endregion
 from qlib.constant import REG_CN
 
 
