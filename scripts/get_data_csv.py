@@ -12,4 +12,3 @@ from qlib.tests.data import GetData
 aa = GetData()
 aa.csv_data_cn(target_dir=provider_uri)
 
-

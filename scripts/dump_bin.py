@@ -504,4 +504,10 @@ class DumpDataUpdate(DumpDataBase):
 
 
 if __name__ == "__main__":
-    fire.Fire({"dump_all": DumpDataAll, "dump_fix": DumpDataFix, "dump_update": DumpDataUpdate})
+    # fire.Fire({"dump_all": DumpDataAll, "dump_fix": DumpDataFix, "dump_update": DumpDataUpdate})
+
+    #1.csv转换成 bin文件
+    provider_uri = "../qlib_data/csv_data"  # target_dir
+    aa = DumpDataAll(csv_path=provider_uri, qlib_dir=provider_uri, include_fields='open,close,high,low,volume,adjclose')
+    # 执行转储
+    aa.dump()
